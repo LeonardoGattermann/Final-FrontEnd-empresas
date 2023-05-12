@@ -1,0 +1,30 @@
+:root {
+    --brand2: #3532FF;
+    --brand1: #0000FF;
+    --success: #36B37E;
+    --error: #FF5630;
+    --warning: #FFAB00;
+    --grey1: #212529;
+    --grey2: #495057;
+    --grey3: #ADB5BD;
+    --grey4: #E9ECEF;
+    --grey5: #F1F3F5;
+    --mode: #FFFFFF;
+  }
+
+
+  .material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 1,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 48
+ }
+
+ .color--blue{
+   color:var(--brand2);
+ }
+
+ input{
+  cursor: pointer;
+ }

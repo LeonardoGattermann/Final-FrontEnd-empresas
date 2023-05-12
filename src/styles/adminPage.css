@@ -1,0 +1,642 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 140px 15px 140px;
+    align-items: center;
+}
+
+.header__button{
+    border-radius: 5px;
+
+    border: 1px solid var(--brand1);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    
+    height: 48px;
+    width: 142px;
+
+    text-align: center;
+
+    color: var(--brand1);
+}
+
+.header__button:hover{
+    background-color: var(--brand2);
+    color: var(--mode);
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 24px 140px;
+}
+
+.div__select{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select__companhia{
+    cursor: pointer;
+    background: #0000FF;
+    height: 40px;
+    width: 288px;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.departments{
+    display: flex;
+    flex-direction: column;
+}
+
+.div__departments{
+    display: flex;
+    justify-content: space-between;
+}
+
+.departments__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+
+}
+
+.new__departments{
+    color: #fff;
+    background: #0000FF;
+    height: 40px;
+    width: 150px;
+}
+
+.list__departments-section{
+    margin-top: 20px;
+    width: 100%;
+    height: 385px;
+    overflow-y: auto;
+    background: #F8F8F8;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+}
+
+.list__departments-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list__departments-item{
+    margin-top: 43px;
+    /* margin-left: 46px; */
+    /* margin-right: 46px; */
+    
+    background: #FFFFFF;
+    border: 1px solid #0000FF;
+    height: 196px;
+    width: 400px;
+    border-radius: 0px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px;
+ }
+
+ .list__departments-info{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+ }
+
+.list__departments-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.list__departments-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.list__departments-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.list__departments-icon{
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.list__departments-icon--visibility{
+    color: #0000FF;
+}
+
+.list__departments-icon--edit{
+    color: #FFAB00;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.list__departments-icon--delete{
+    color: #FF5630;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.users__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+.users__list{
+    width: 100%;
+    height: 385px;
+
+    overflow-x: auto;
+
+    background: #F8F8F8;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 43px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.users__username{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+
+}
+
+.users__company-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #000000;
+}
+
+.users__list-item{
+    background: #FFFFFF;
+    border: 1px solid #0000FF;
+    height: 145px;
+    width: 400px;
+    border-radius: 0px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px;
+}
+
+.users__actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.department__view{
+    border: 1px solid #d8d8d8;
+}
+
+.department__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 857px;
+    height: 500px;
+    background: #FFFFFF;
+
+    padding: 25px;
+}
+
+.department__header{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #000000;
+}
+
+.department__description{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.department__company{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.department__actions{
+    display: flex;
+    gap: 19px;
+}
+
+.department__select{
+    padding: 15px;
+    width: 565px;
+    height: 52px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.department__button{
+    height: 52px;
+    width: 190px;
+    border-radius: 0px;
+    background: #36B37E;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.department__list{
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 16px;
+    width: 775px;
+    height: 290px;
+    background: #F8F8F8;
+}
+
+.department__list-item{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 196px;
+    width: 306px;
+    
+    background: #FFFFFF;
+    border-bottom: 1px solid #0000FF;
+}
+
+.department__username{
+    margin-top: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.department__company-name{
+    margin-top: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.department__button--off{
+    margin-top: 52px;
+    border: 1px solid #FF5630;
+    box-sizing: border-box;
+    height: 48px;
+    width: 255px;
+}
+.new-department{
+    border: 1px solid #d8d8d8;
+    width: 506px;
+    height: 402px;
+
+    background: #FFFFFF;
+}
+
+.section-new{
+    gap: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-department__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #000000;
+}
+
+.new-department__input{
+    width: 422px;
+    height: 52px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: rgba(0, 0, 0, 0.5);
+    padding: 17px;
+}
+
+.new-department__select{
+    width: 422px;
+    height: 52px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.new-department__button{
+    background: #36B37E;
+    height: 48px;
+    width: 422px;
+}
+
+.new-close{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #000;
+    font-size: 22px;
+}
+
+.edit-department{
+    border: 1px solid #d8d8d8;
+    width: 506px;
+    height: 330px;
+    background: #FFFFFF;
+}
+
+.edit-department__section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 38px;
+}
+
+.edit-department__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-department__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #000000;
+
+}
+
+.edit-department__close{
+    font-size: 22px;
+
+}
+
+.edit-department__input{
+    width: 422px;
+    height: 113px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.edit-department__button{
+    background: #36B37E;
+    height: 48px;
+    width: 422px;
+}
+
+.remove-department{
+    border: 1px solid #d8d8d8;
+    padding: 65px;
+}
+
+.removed-department{
+    display: flex;
+    flex-direction: column;
+    width: 733px;
+    height: 342px;
+
+    background: #FFFFFF;
+}
+
+.remove-department__title{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.remove-department__name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.remove-header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.remove-department__button{
+    position: absolute;
+    left: 21.28%;
+    right: 21.15%;
+    top: 66.67%;
+    bottom: 19.3%;
+
+    background: #FF5630;
+    color: #FFFFFF;
+}
+
+.edit-user{
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+}
+
+.edit-user__section{
+    justify-content: center;
+    width: 506px;
+    height: 359px;
+
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.edit-user__header{
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+}
+
+.edit-user__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #000000;
+}
+
+.edit-user__close-button{
+    font-size: 22px;
+}
+
+.edit-user__input{
+    width: 422px;
+    height: 52px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: rgba(0, 0, 0, 0.5);
+    padding: 17px;
+}
+
+.edit-user__button{
+    background: #36B37E;
+    height: 48px;
+    width: 422px;
+}
+
+.removed-user{
+    display: flex;
+    flex-direction: column;
+    height: 292px;
+    width: 733px;
+    padding: 20px;
+}
+
+.toast__container{
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+    margin-top: 95px;
+    border-radius: 10px;
+    padding: 20px 40px;
+}

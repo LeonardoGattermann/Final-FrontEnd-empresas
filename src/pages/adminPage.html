@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../styles/globalStatistics.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/adminPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Kenzie Empresas</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__logo-container">
+            <span class="header__icon material-symbols-outlined color--blue">radio_button_unchecked</span>
+            <img class="header__logo" src="../assents/kenzieLogo.svg" alt="">
+        </div>
+        <div class="header__button-container">
+            <a href="/index.html"><input class="header__button button__cadastro" type="button" value="Logout"></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="div__select">
+            <select class="select__companhia">
+                <option hidden value="">Selecionar Empresa</option>
+            </select>
+        </div>
+        <section class="departments">
+            <div class="div__departments">
+                <h1 class="departments__title">Departamentos</h1>
+                <input class="new__departments" type="button" value="+ Criar">
+            </div>
+
+            <section class="list__departments-section">
+                <ul class="list__departments-list">
+                    
+
+                </ul>
+            </section>
+        </section>
+        <section class="users">
+            <h1 class="users__title">Usuarios Cadastrados</h1>
+            <ul class="users__list">
+                <li class="users__list-item">
+                    <div class="users__info">
+                        <h1 class="users__username">Username</h1>
+                        <h3 class="users__company-name">NomeCompanhia</h3>
+                    </div>
+                    <aside class="users__actions">
+                        <span class=" list__departments-icon--edit material-symbols-outlined">edit</span>
+                        <span class=" list__departments-icon--delete material-symbols-outlined">delete</span>
+                    </aside>
+                </li>
+                
+            </ul>
+        </section>
+        <dialog class="department__view">
+            <section class="department__info">
+                <header class="department__header">
+                    <h1 class="department__title"></h1>
+                    <span class="department__close">X</span>
+                </header>
+                <h2 class="department__description"></h2>
+                <h3 class="department__company"></h3>
+                <div class="department__actions">
+                    <select class="department__select">
+                        <option hidden value="">Selecionar usuário</option>
+                    </select>
+                    <input class="department__button" type="button" id="addNewEmployeer" value="Contratar">
+                </div>
+                <ul class="department__list">
+                    
+                </ul>
+            </section>
+        </dialog>
+        
+        <dialog class="new-department">
+            <span class="new-close">X</span>
+           <section class="section-new"> 
+            <h1 class="new-department__title">Criar Departamento</h1>
+            <input class="new-department__input" id="name_department" type="text"  placeholder="Nome do departamento">
+            <input class="new-department__input" id="description_department" type="text" placeholder="Descrição" id="">
+            <select class="new-department__select" name="" id="">
+                <option value="" hidden>Selecionar empresa</option>
+            </select>
+            <input class="new-department__button"  type="button" value="Criar"></section>
+        </dialog>
+
+        <dialog class="edit-department">
+            <section class="edit-department__section"> 
+                <header class="edit-department__header">
+                    <h1 class="edit-department__title">Editar Departamento</h1>
+                    <span class="edit-department__close">X</span>
+                </header>
+                <input class="edit-department__input" type="text" placeholder="Valores anteriores da descrição" id="">
+                <input class="edit-department__button" type="button" value="Salvar">
+            </section>
+        </dialog>
+        
+        <dialog class="remove-department" >
+            <section class="removed-department">
+                <header class="remove-header"> <span class="remove-department__close">X</span></header>
+             <h1 class="remove-department__title">Realmente deseja remover o Departamento</h1>
+             <span class="remove-department__name">NOME</span>  
+             <h1 class="remove-department__title">e demitir seus funcionários?</h1>
+             <input class="remove-department__button" type="button" value="Remover">
+            </section>
+         </dialog>
+        
+         <dialog class="edit-user" >
+            <section class="edit-user__section">
+                <header class="edit-user__header">
+                    <h1 class="edit-user__title">Editar Usuario</h1>
+                    <span class="edit-user__close-button">X</span>
+                </header>
+                <input class="edit-user__input edit-user__input--name" type="text" placeholder="Nome" id="">
+                <input class="edit-user__input edit-user__input--email" type="email" placeholder="E-mail" id="">
+                <input class="edit-user__button" type="button" value="Salvar">
+            </section>
+        </dialog>
+
+        <dialog class="remove-user" >
+            <section class="removed-user">
+                <header class="remove-header"> <span class="remove-department__close">X</span></header>
+             <h1 class="remove-department__title">Realmente deseja remover o usuario</h1>
+             <span class="remove-department__name">NOME</span>  
+             <input class="remove-department__button" type="button" value="Remover">
+            </section>
+         </dialog>
+    </main>
+    <script src="../scripts/admin.js" type="module" defer></script>
+</body>
+</html>

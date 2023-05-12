@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./src/styles/globalStatistics.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-container">
+            <span class="header__icon material-symbols-outlined color--blue">radio_button_unchecked</span>
+            <img class="header__logo" src="./src/assents/kenzieLogo.svg" alt="">
+        </div>
+        <div class="header__button-container">
+            <a href="./src/pages/login.html"><input class="header__button butoon__Login" type="button" value="Login"></a>
+           <a href="./src/pages/register.html"><input class="header__button button__cadastro" type="button" value="Cadastro"></a>
+        </div>
+    </header>
+    <main class="main">
+        <img class="main__img" src="./src/assents/imgHome.png.jpg" alt="">
+         <section class="main__section">
+            <select name="Setores" id="Sector__companies">
+                <option value="All">Selecionar Setor</option>
+            </select>
+            
+            <section class="section__list">
+
+                <h1 class="company__title">Lista De Empresas</h1>
+
+            <ul class="list--companies">
+              </ul>
+            </section>
+        </section>
+    </main>
+    <script src="./src/scripts/index.js" type="module" defer></script>
+</body>
+</html>

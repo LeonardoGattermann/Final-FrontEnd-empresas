@@ -1,0 +1,147 @@
+@media (min-width: 48.01rem) {
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 140px 0 140px;
+    align-items: center;
+}
+
+.header__button{
+    border-radius: 5px;
+
+    border: 1px solid var(--brand1);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    
+    height: 48px;
+    width: 142px;
+
+    text-align: center;
+
+    color: var(--brand1);
+}
+
+.header__button:hover{
+    background-color: var(--brand2);
+    color: var(--mode);
+    cursor: pointer;
+}
+
+.button__cadastro{
+
+    background-color: var(--brand1);
+    color: var(--mode);
+}
+
+.main__img{
+    width: 550px;
+    height: 790px;
+}
+
+.main{
+    
+    max-height: 854px;
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 140px 0 140px;
+}
+
+#Sector__companies{
+    
+    cursor: pointer;
+    width: 500px;
+    height: 52.18px;
+    left: 750px;
+    top: 124px;
+
+    background: #0000FF;
+
+    padding-left:15px ;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.section__list{
+    background: #F8F8F8;
+    padding: 10px 33px 0 33px;
+    max-width: 500px;
+   
+
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 790px;
+}
+
+.company__title{
+    
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #000000;
+}
+
+h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.list--companies{
+    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 686px;
+}
+
+.list__item{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-around;
+
+    min-height: 116px;
+    border: 1px solid #0000FF;
+}
+
+.company__category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #0000FF;
+    border-radius: 255px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #0000FF;
+
+    height: 32px;
+    width: 93px;
+}
+
+}
+
+
