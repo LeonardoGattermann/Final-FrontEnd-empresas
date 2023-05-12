@@ -74,3 +74,4 @@ function toast(txt){
     body.removeChild(divAnimation);
   }, 3000);
 }
+

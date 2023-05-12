@@ -43,16 +43,6 @@
         <section class="users">
             <h1 class="users__title">Usuarios Cadastrados</h1>
             <ul class="users__list">
-                <li class="users__list-item">
-                    <div class="users__info">
-                        <h1 class="users__username">Username</h1>
-                        <h3 class="users__company-name">NomeCompanhia</h3>
-                    </div>
-                    <aside class="users__actions">
-                        <span class=" list__departments-icon--edit material-symbols-outlined">edit</span>
-                        <span class=" list__departments-icon--delete material-symbols-outlined">delete</span>
-                    </aside>
-                </li>
                 
             </ul>
         </section>
@@ -101,9 +91,9 @@
         
         <dialog class="remove-department" >
             <section class="removed-department">
-                <header class="remove-header"> <span class="remove-department__close">X</span></header>
+                <header class="remove-header"><span class="remove-department__close">X</span></header>
              <h1 class="remove-department__title">Realmente deseja remover o Departamento</h1>
-             <span class="remove-department__name">NOME</span>  
+             <span class="remove-department__name"></span>  
              <h1 class="remove-department__title">e demitir seus funcionários?</h1>
              <input class="remove-department__button" type="button" value="Remover">
             </section>
@@ -121,12 +111,12 @@
             </section>
         </dialog>
 
-        <dialog class="remove-user" >
+        <dialog class="remove-user" id="removedUserRealy" >
             <section class="removed-user">
-                <header class="remove-header"> <span class="remove-department__close">X</span></header>
+                <header class="remove-header"> <span class="remove-employee-close">X</span></header>
              <h1 class="remove-department__title">Realmente deseja remover o usuario</h1>
-             <span class="remove-department__name">NOME</span>  
-             <input class="remove-department__button" type="button" value="Remover">
+             <span class="remove-department__name" id="nameDismiss"></span>  
+             <input class="remove-department__button" id="dismissEmployee" type="button" value="Remover">
             </section>
          </dialog>
     </main>

@@ -567,12 +567,12 @@
 }
 
 .edit-user__section{
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 506px;
     height: 359px;
-
     background: #FFFFFF;
-    display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
