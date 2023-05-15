@@ -78,6 +78,7 @@
 
 .person__job2{
     display: none;
+    flex-direction: column;
     height: 467px;
     border: 1px solid #A8A8A8;
 

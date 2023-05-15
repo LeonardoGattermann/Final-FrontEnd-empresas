@@ -18,13 +18,13 @@
             <img class="header__logo" src="../assents/kenzieLogo.svg" alt="">
         </div>
         <div class="header__button-container">
-            <a href="/index.html"><input class="header__button button__cadastro" type="button" value="Logout"></a>
+            <input class="header__button button__cadastro" id="logoutButton" type="button" value="Logout">
         </div>
     </header>
     <main class="main">
         <div class="div__select">
             <select class="select__companhia">
-                <option hidden value="">Selecionar Empresa</option>
+                <option value="ALL">Selecionar Empresa</option>
             </select>
         </div>
         <section class="departments">
@@ -50,7 +50,7 @@
             <section class="department__info">
                 <header class="department__header">
                     <h1 class="department__title"></h1>
-                    <span class="department__close">X</span>
+                    <span class="department__close" id="close">X</span>
                 </header>
                 <h2 class="department__description"></h2>
                 <h3 class="department__company"></h3>
@@ -67,7 +67,7 @@
         </dialog>
         
         <dialog class="new-department">
-            <span class="new-close">X</span>
+            <span class="new-close" id="close">X</span>
            <section class="section-new"> 
             <h1 class="new-department__title">Criar Departamento</h1>
             <input class="new-department__input" id="name_department" type="text"  placeholder="Nome do departamento">
@@ -78,11 +78,16 @@
             <input class="new-department__button"  type="button" value="Criar"></section>
         </dialog>
 
+        <div class="toast__container hidden">
+            <p></p>
+        </div>
+
+
         <dialog class="edit-department">
             <section class="edit-department__section"> 
                 <header class="edit-department__header">
                     <h1 class="edit-department__title">Editar Departamento</h1>
-                    <span class="edit-department__close">X</span>
+                    <span class="edit-department__close close" id="close">X</span>
                 </header>
                 <input class="edit-department__input" type="text" placeholder="Valores anteriores da descrição" id="">
                 <input class="edit-department__button" type="button" value="Salvar">
@@ -91,7 +96,7 @@
         
         <dialog class="remove-department" >
             <section class="removed-department">
-                <header class="remove-header"><span class="remove-department__close">X</span></header>
+                <header class="remove-header"><span class="remove-department__close" id="close">X</span></header>
              <h1 class="remove-department__title">Realmente deseja remover o Departamento</h1>
              <span class="remove-department__name"></span>  
              <h1 class="remove-department__title">e demitir seus funcionários?</h1>
@@ -103,7 +108,7 @@
             <section class="edit-user__section">
                 <header class="edit-user__header">
                     <h1 class="edit-user__title">Editar Usuario</h1>
-                    <span class="edit-user__close-button">X</span>
+                    <span class="edit-user__close-button" id="close">X</span>
                 </header>
                 <input class="edit-user__input edit-user__input--name" type="text" placeholder="Nome" id="">
                 <input class="edit-user__input edit-user__input--email" type="email" placeholder="E-mail" id="">
@@ -113,7 +118,7 @@
 
         <dialog class="remove-user" id="removedUserRealy" >
             <section class="removed-user">
-                <header class="remove-header"> <span class="remove-employee-close">X</span></header>
+                <header class="remove-header"> <span class="remove-employee-close" id="close">X</span></header>
              <h1 class="remove-department__title">Realmente deseja remover o usuario</h1>
              <span class="remove-department__name" id="nameDismiss"></span>  
              <input class="remove-department__button" id="dismissEmployee" type="button" value="Remover">

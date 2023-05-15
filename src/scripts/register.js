@@ -1,3 +1,19 @@
+const red = "#D7443E";
+const green = "#36B37E";
+
+const tokenUser = localStorage.getItem("authToken");
+const isAdm = localStorage.getItem('isAdm')
+function routeProtect(){
+  if(tokenUser){
+      if(isAdm == "true"){
+        window.location.href = "./adminPage.html";
+      }else if(isAdm == "false"){
+        window.location.href = "./user.html";
+      }
+  }else if(!tokenUser){
+  }
+}
+
 function getUser(){
     const btnRegister = document.querySelector('#btn-register')
     btnRegister.addEventListener('click',()=>{
@@ -8,14 +24,15 @@ function getUser(){
             if(verifyEmail(email)){
                 if(password.length > 7){
                     createUser(name,email,password)
+                    
                 }else{
-                    toast("Insira uma senha com 8 ou mais caracteres.!")
+                    toast("Insira uma senha com 8 ou mais caracteres.!",red)
                 }
             }else{ 
-                toast("Insira um email Valido")
+                toast("Insira um email Valido",red)
             }
         }else{
-            toast("Insira um Nome")
+            toast("Insira um Nome",red)
         }
     })
 }
@@ -55,18 +72,22 @@ await fetch(url, {
   .then(data => {
     console.log(data)
     if(data.message == "Email já cadastrado, por favor informe outro ou faça login"){
-      toast(data.message)
-      
-    }else{
-      toast("Email criado, Logue-se");
+      toast(data.message,red)
+      setTimeout(() => {
         window.location.href = "./login.html";
+      }, 1500);
+    }else{
+      toast("Email criado, Logue-se",green);
+      setTimeout(() => {
+        window.location.href = "./login.html";
+      }, 1500);
     }
     
 })
   .catch(error => console.error(error));
 }
 
-function toast(txt){
+function toast(txt,color){
     const body = document.querySelector(".body");
     const divAnimation = document.createElement("div");
     const textAnimation = document.createElement("p");
@@ -74,7 +95,7 @@ function toast(txt){
     divAnimation.classList.add("toast__container", "toastadd");
     textAnimation.className = "textAnimation";
 
-    divAnimation.style.backgroundColor = "#D7443E";
+    divAnimation.style.backgroundColor = color
 
     textAnimation.innerHTML = txt;
 

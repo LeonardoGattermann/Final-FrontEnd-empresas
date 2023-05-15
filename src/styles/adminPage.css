@@ -262,10 +262,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+
     line-height: 54px;
 
     color: #000000;
+}
+
+.department__title{
+        font-size: 36px;
 }
 
 .department__description{
@@ -629,14 +633,69 @@
     padding: 20px;
 }
 
-.toast__container{
-    font-family: "Inter", sans-serif;
-    position: absolute;
+.toast__container {
+    position: fixed;
     z-index: 1;
-    top: 0;
-    right: 0;
+    top: 2rem;
+    right: 2rem;
+    
+    padding: 10px;
 
-    margin-top: 95px;
-    border-radius: 10px;
-    padding: 20px 40px;
-}
+    border: 1px solid;
+    color: var(--grey-100);
+    
+    min-width: 100px;
+    min-height: 50px;
+
+    -webkit-box-shadow: -2px 2px 35px -2px rgba(138,35,43,1);
+    -moz-box-shadow: -2px 2px 35px -2px rgba(138,35,43,1);
+    box-shadow: -2px 2px 35px -2px rgba(138,35,43,1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    border-radius: 20px;
+    animation: fadeIn 1s linear;
+  }
+  
+  .toast__fadeOut {
+    animation: fadeOut 1s linear;
+  } 
+  
+  .hidden {
+    display: none;
+  }
+  
+  .input__focus {
+    border-color: var(--red-500);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(-150%);
+    }
+  }
+
+
+  #close{
+    cursor: pointer;
+  }

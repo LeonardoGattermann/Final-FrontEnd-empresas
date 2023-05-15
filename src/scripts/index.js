@@ -2,6 +2,7 @@ async function requestSectors(){
 await fetch("http://localhost:3333/categories/readAll")
     .then(response => response.json())
     .then(data => {
+        localStorage.clear()
         localStorage.setItem('sectores',JSON.stringify(data))
         })
     .catch(error => console.log(error))
@@ -105,10 +106,6 @@ renderCompanies(companiesStorage)
 function renderList(arr) {
   const ul = document.querySelector('ul')
   arr.forEach(company => {
-      // const sector = department.filter(element => {
-      //     const filterBySector = element.id === company.category_id
-      //     return filterBySector
-      // })
 
       const li = document.createElement('li')
       const liContainer = document.createElement('div')
